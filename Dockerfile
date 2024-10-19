@@ -4,13 +4,6 @@ FROM python:slim
 # Set the working directory in the container
 WORKDIR /app
 
-# Install system dependencies for psycopg2 and other Python packages that require compilation
-RUN apt-get update && apt-get install -y --no-install-recommends \
-    gcc \
-    libpq-dev \
-    build-essential \
-    && rm -rf /var/lib/apt/lists/*
-
 # Copy the current directory contents into the container
 COPY . /app
 
