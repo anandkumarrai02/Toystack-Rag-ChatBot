@@ -2,7 +2,7 @@
 FROM python:slim
 
 # Set the working directory in the container
-WORKDIR /app
+WORKDIR /Toystack-Rag-ChatBot
 
 # Copy the current directory contents into the container
 COPY . /app
