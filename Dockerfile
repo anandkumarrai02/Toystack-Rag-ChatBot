@@ -11,7 +11,7 @@ COPY . /app
 RUN pip install -r requirements.txt
 
 # Copy the .env file to the container (ensure it's in your source directory)
-COPY .env /app/.env
+COPY .env /Toystack-Rag-ChatBot/.env
 
 # Expose port for Streamlit (default is 8501)
 EXPOSE 8501
