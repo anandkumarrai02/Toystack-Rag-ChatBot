@@ -17,4 +17,4 @@ COPY .env /Toystack-Rag-ChatBot/.env
 EXPOSE 8501
 
 # Command to run the Streamlit app
-CMD ["streamlit", "run", "appp.py"]
+CMD ["streamlit", "run", "app.py"]
