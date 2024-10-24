@@ -8,7 +8,7 @@ WORKDIR /Toystack-Rag-ChatBot
 COPY . /app
 
 # Install Python dependencies using requirements.txt
-RUN pip install --upgrade pip && pip install -r requirements.txt
+RUN pip install -r requirements.txt
 
 # Copy the .env file to the container (ensure it's in your source directory)
 COPY .env /app/.env
