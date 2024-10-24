@@ -1,9 +1,0 @@
-streamlit
-google-generativeai
-python-dotenv
-langchain
-PyPDF2
-langchain_google_genai
-pgvector
-psycopg2-binary
-langchain_community
