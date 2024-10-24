@@ -17,4 +17,4 @@ COPY .env /app/.env
 EXPOSE 8501
 
 # Command to run the Streamlit app
-CMD ["streamlit", "run", "app.py"]
+CMD ["streamlit", "run", "appp.py"]
