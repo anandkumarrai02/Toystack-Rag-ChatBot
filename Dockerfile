@@ -1,5 +1,5 @@
 # Use an official Python runtime as a parent image (slim version for smaller size)
-FROM python:slim
+FROM python:3.12-slim
 
 # Set the working directory in the container
 WORKDIR /Toystack-Rag-ChatBot
@@ -8,7 +8,7 @@ WORKDIR /Toystack-Rag-ChatBot
 COPY . /app
 
 # Install Python dependencies using requirements.txt
-RUN pip install --no-cache-dir --upgrade pip && pip install --no-cache-dir -r requirements.txt
+RUN pip install --upgrade pip && pip install -r requirements.txt
 
 # Copy the .env file to the container (ensure it's in your source directory)
 COPY .env /app/.env
