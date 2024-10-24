@@ -2,16 +2,16 @@
 FROM python:3.12-slim
 
 # Set the working directory in the container
-WORKDIR /Toystack-Rag-ChatBot
+WORKDIR /app
 
 # Copy the current directory contents into the container
 COPY . /app
 
 # Install Python dependencies using requirements.txt
-RUN pip install -r Toystack-Rag-ChatBot/requirements.txt
+RUN pip install --no-cache-dir -r /app/requirements.txt
 
-# Copy the .env file to the container (ensure it's in your source directory)
-COPY .env /Toystack-Rag-ChatBot/.env
+# Copy the .env file to the container
+COPY .env /app/.env
 
 # Expose port for Streamlit (default is 8501)
 EXPOSE 8501
